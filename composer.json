@@ -1,0 +1,74 @@
+{
+  "name": "client/project-name",
+  "description": "Plugins and theme to power the website.",
+  "type": "project",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "WebDevStudios",
+      "email": "contact@webdevstudios.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://packages.wdslab.com"
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "require": {
+    "deliciousbrains-plugin/wp-migrate-db-pro": "^1.9",
+    "deliciousbrains-plugin/wp-migrate-db-pro-cli": "^1.3",
+    "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "^1.4",
+    "webdevstudios/advanced-custom-fields-pro": "^5.9",
+    "webdevstudios/gravityforms": "^2.4",
+    "webdevstudios/mu-autoload": "^1.5",
+    "webdevstudios/sso-addon": "^1.0",
+    "wp-media/wp-rocket": "^3.8",
+    "wpackagist-plugin/block-pattern-builder": "^1.1",
+    "wpackagist-plugin/cookie-notice": "^2.0",
+    "wpackagist-plugin/query-monitor": "^3.6",
+    "wpackagist-plugin/resmushit-image-optimizer": "^0.3",
+    "wpackagist-plugin/stream": "^3.6",
+    "wpackagist-plugin/wordpress-seo": "^16.0",
+    "wpackagist-plugin/wds-site-documentation": "^1.0",
+    "webdevstudios/wds-blocks": "^2.0",
+    "webdevstudios/wds-acf-blocks": "^1.0"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "wp-coding-standards/wpcs": "^2.3",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "scripts": {
+    "post-autoload-dump": "WebDevStudios\\MUAutoload\\Installer::install",
+    "format": "phpcbf --report=summary,source",
+    "lint": "phpcs --report=summary,source",
+    "build": [
+        "@composer install",
+        "cd themes/wds-project-theme && npm install && composer install"
+    ]
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  }
+}
