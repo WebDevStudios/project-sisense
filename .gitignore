@@ -23,6 +23,8 @@ vendor/
 /mu-plugins/*
 /plugins/*
 !/plugins/acf_to_json
+!/plugins/amazon-s3-and-cloudfront-pro
+!/plugins/amazon-s3-and-cloudfront-pro/vendor
 !/plugins/wp-graphql-acf-0.5.3
 !/plugins/wp-graphql-acf-0.5.3/vendor
 !/plugins/wp-graphql-acf-feature-fix-field-group-prefixing
