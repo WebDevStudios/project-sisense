@@ -1,0 +1,250 @@
+{
+    "key": "group_615de8c39de07",
+    "title": "Nav Items",
+    "fields": [
+        {
+            "key": "field_6171bdaebf41b",
+            "label": "Is CTA?",
+            "name": "is_cta",
+            "type": "true_false",
+            "instructions": "Show as cta",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_615f137b300d7",
+            "label": "Is Inset",
+            "name": "is_inset",
+            "type": "true_false",
+            "instructions": "Show item in an inset menu, next to (or below on mobile) the main navigation menu",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6171bdaebf41b",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_615f4ef027700",
+            "label": "Is Header",
+            "name": "is_header",
+            "type": "true_false",
+            "instructions": "For non-clickable, subdued header items",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6171bdaebf41b",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_61a6601f80075",
+            "label": "Is Bold",
+            "name": "is_bold",
+            "type": "true_false",
+            "instructions": "Show as bold text when no eyebrow\/subset text is filled out",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6171bdaebf41b",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_615de8d375f68",
+            "label": "Icon",
+            "name": "icon",
+            "type": "image",
+            "instructions": "Image shown to the left of the nav item",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6171bdaebf41b",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 200,
+            "max_height": 200,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_615f3698aa5a9",
+            "label": "Icon Small",
+            "name": "icon_small",
+            "type": "true_false",
+            "instructions": "Show small icon",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6171bdaebf41b",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_615f0e3514971",
+            "label": "Eyebrow",
+            "name": "eyebrow",
+            "type": "text",
+            "instructions": "The small text above the main nav item text.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6171bdaebf41b",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_615f141061da4",
+            "label": "Subset Text",
+            "name": "subset_text",
+            "type": "text",
+            "instructions": "Text that appears below the link",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6171bdaebf41b",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "location\/primary"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "navItemFields",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1644858640
+}

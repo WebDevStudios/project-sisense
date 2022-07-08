@@ -1,0 +1,51 @@
+{
+    "key": "group_61bb75fc6e746",
+    "title": "Data Connectors Landing",
+    "fields": [
+        {
+            "key": "field_61bb7606704bd",
+            "label": "Data Connector Page Count",
+            "name": "page_count",
+            "type": "number",
+            "instructions": "The number",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": 30,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 9,
+            "max": 99,
+            "step": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "133371"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "show_in_graphql": 1,
+    "graphql_field_name": "dataConnectorsFields",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1644858638
+}

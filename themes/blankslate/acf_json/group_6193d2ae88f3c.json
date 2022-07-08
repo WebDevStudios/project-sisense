@@ -1,0 +1,152 @@
+{
+    "key": "group_6193d2ae88f3c",
+    "title": "Custom Post Properties",
+    "fields": [
+        {
+            "key": "field_6193d2b3f852d",
+            "label": "Video",
+            "name": "video",
+            "type": "text",
+            "instructions": "Video embed url",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61dc7816f7fa9",
+            "label": "Video Placeholder Image",
+            "name": "video_placeholder_image",
+            "type": "image",
+            "instructions": "Will show in place of the video until the play button is clicked",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6193d2b3f852d",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_61d604006e95e",
+            "label": "Marketo Form Id",
+            "name": "marketo_form_id",
+            "type": "text",
+            "instructions": "Optional Marketo form id for templates that support contact form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61eb21d150840",
+            "label": "Author Override",
+            "name": "author_override",
+            "type": "text",
+            "instructions": "if selected, will replace author name instead of Wordpress author\r\n\r\n** NOTE: For post relationship fields (such as the Featured Articles component) where you choose a post from a dropdown, this field will be populated in the acf-to-json plugin code, instead of the nextjs codebase",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61eb21f250841",
+            "label": "Author Image",
+            "name": "author_image",
+            "type": "image",
+            "instructions": "Will replace Wordpress post author image\r\n\r\n** NOTE: For post relationship fields (such as the Featured Articles component) where you choose a post from a dropdown, this field will be populated in the acf-to-json plugin code, instead of the nextjs codebase",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "webinar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1645816753
+}

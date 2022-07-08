@@ -26,5 +26,6 @@ vendor/
 
 # theme
 /themes/*
-!/themes/wds-project-theme
-/themes/wds-project-theme/dist
+!/themes/blankslate
+!/themes/blankslate-2
+!/themes/genesis-block-theme
