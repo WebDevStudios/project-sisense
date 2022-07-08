@@ -22,7 +22,15 @@ vendor/
 /uploads/
 /mu-plugins/*
 /plugins/*
-!/plugins/wds-project-plugin
+!/plugins/acf_to_json
+!/plugins/wp-graphql-acf-0.5.3
+!/plugins/wp-graphql-acf-0.5.3/vendor
+!/plugins/wp-graphql-acf-feature-fix-field-group-prefixing
+!/plugins/wp-graphql-acf-feature-fix-field-group-prefixing/vendor
+!/plugins/wp-graphql-acf-master
+!/plugins/wp-graphql-acf-master/vendor
+!/plugins/wp-graphql-tax-query-0.1.0
+!/plugins/wp-graphql-tax-query-0.1.0/vendor
 
 # theme
 /themes/*
