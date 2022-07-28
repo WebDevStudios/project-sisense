@@ -1,0 +1,93 @@
+{
+    "key": "group_61c2299836fe3",
+    "title": "Connector Details",
+    "fields": [
+        {
+            "key": "field_61c22c53a3138",
+            "label": "Badge Label",
+            "name": "connector_badge_label",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Native": "Native",
+                "Technology Partner": "Technology Partner",
+                "Certified Connector": "Certified Connector"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6219021ce3744",
+            "label": "Grid Connector Count",
+            "name": "grid_connector_count",
+            "type": "number",
+            "instructions": "The number of data connectors that will be initially loaded in the grid",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 30,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_6219024be3745",
+            "label": "Grid Connector Count Per Page",
+            "name": "grid_connector_count_per_page",
+            "type": "number",
+            "instructions": "The number of data connectors that will be loaded every time the \"Load More\" button is clicked",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 6,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "data-connector"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1645806185
+}

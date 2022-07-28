@@ -1,0 +1,85 @@
+{
+    "key": "group_6164945fed16b",
+    "title": "Footer",
+    "fields": [
+        {
+            "key": "field_6164946863d7e",
+            "label": "Footer Copy",
+            "name": "footer_copy",
+            "type": "text",
+            "instructions": "Text that appears below Sisense logo in footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6164948b63d7f",
+            "label": "Footer CTA Link",
+            "name": "footer_cta_link",
+            "type": "text",
+            "instructions": "Call to Action link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_616494a263d80",
+            "label": "Footer CTA Text",
+            "name": "footer_cta_text",
+            "type": "text",
+            "instructions": "Call to Action button text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu",
+                "operator": "==",
+                "value": "2"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1645816024
+}
