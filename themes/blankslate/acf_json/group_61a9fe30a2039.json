@@ -1,0 +1,49 @@
+{
+    "key": "group_61a9fe30a2039",
+    "title": "Whitepaper Properties",
+    "fields": [
+        {
+            "key": "field_61a9fe3897e6c",
+            "label": "PDF File",
+            "name": "pdf_file",
+            "type": "file",
+            "instructions": "PDF File for downloading",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "pdf"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "whitepaper"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "show_in_graphql": 1,
+    "graphql_field_name": "whitepaperProperties",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1644858653
+}

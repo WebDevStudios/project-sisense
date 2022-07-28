@@ -1,0 +1,49 @@
+{
+    "key": "group_61e9a1f5894b7",
+    "title": "Report Properties",
+    "fields": [
+        {
+            "key": "field_61e9a92b79cee",
+            "label": "PDF File",
+            "name": "pdf_file",
+            "type": "file",
+            "instructions": "PDF associated with partner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "report"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "reportProperties",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1644858640
+}
